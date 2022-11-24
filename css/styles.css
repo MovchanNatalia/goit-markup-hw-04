@@ -16,6 +16,7 @@
   --primary-bg-color: #f5f5f5;
   --footer-contact: rgba(255, 255, 255, 0.6);
   --icon: #afb1b8;
+  --footer-bg-icon: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 }
 
 h2,
+h3,
 ul,
 li,
 p {
@@ -377,7 +379,7 @@ h1 {
 
 .team-name {
   margin-top: 0;
-  margin-bottom: ;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -469,12 +471,75 @@ img {
   fill: currentColor;
 }
 
+/* Постійні клієнти */
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: var(--icon);
+}
+
+.clients-icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon .icon-link:hover,
+.clients-icon .icon-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  border-color: var(--accent-color);
+}
+
 /* footer */
 
+
 .footer-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;  
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color-black);
+  
 }
 
 .logo-foot-site {
@@ -530,6 +595,52 @@ img {
   margin-bottom: 12px;
 }
 
+.container-footer-nav {
+  margin-right: 70px;
+  margin-left: 215px;
+}
+
+.footer-social-title {
+  color: var(--bg-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-items {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--bg-color);
+  background-color: var(--footer-bg-icon);
+}
+
+.footer-social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.team-soc-icons {
+  fill: currentColor;
+}
+
 /* портфоліо */
 
 .btn-work {
@@ -568,6 +679,14 @@ img {
 .project {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-type:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project:nth-child(3n) {
