@@ -1,9 +1,3 @@
-/* цвет основного текста #212121 */
-/* вторичный цвет текста #757575 */
-/* белый цвет текста #FFFFFF */
-/* акцент #2196F3 */
-/* цвет текста контакты футер rgba(255, 255, 255, 0.6); */
-/* фон #F5F5F5 #F5F4FA #2F303A*/
 
 :root {
   --primary-text-color: #212121;
@@ -164,9 +158,6 @@ h1 {
 /* hero */
 
 .hero-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 280px;
   background-color: var(--bg-color-black);
@@ -180,7 +171,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
+
   height: 600px;
   margin: 0 auto;
 }
@@ -462,7 +453,8 @@ img {
   color: var(--icon);
 }
 
-.team-social-link:hover {
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: var(--accent-color);
   color: var(--bg-color);
 }
@@ -527,19 +519,22 @@ img {
 
 /* footer */
 
-
 .footer-title {
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;  
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color-black);
-  
+}
+
+.foot-nav {
+  display: flex;
+}
+
+.footer-nav {
+  margin-right: 70px;
 }
 
 .logo-foot-site {
@@ -595,9 +590,8 @@ img {
   margin-bottom: 12px;
 }
 
-.container-footer-nav {
-  margin-right: 70px;
-  margin-left: 215px;
+.footer-soc-net {
+  padding-top: 15px;
 }
 
 .footer-social-title {
@@ -626,14 +620,15 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
-   border-radius: 50%;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   fill: var(--bg-color);
   background-color: var(--footer-bg-icon);
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -681,12 +676,14 @@ img {
   margin-bottom: 30px;
 }
 
-.project:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-type:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-type:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project:nth-child(3n) {
